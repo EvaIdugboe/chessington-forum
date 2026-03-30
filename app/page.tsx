@@ -103,29 +103,13 @@ export default function HomePage() {
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-800">
                   Register interest
                 </p>
-                <form className="mt-4 space-y-3 text-left">
-                  <input
-                    type="text"
-                    placeholder="Full name"
-                    className="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none ring-0 focus:border-emerald-700"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Business name"
-                    className="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none ring-0 focus:border-emerald-700"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email address"
-                    className="w-full rounded-2xl border border-stone-300 px-4 py-3 outline-none ring-0 focus:border-emerald-700"
-                  />
-                  <button
-                    type="submit"
-                    className="w-full rounded-full bg-emerald-800 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-900"
-                  >
-                    Register interest
-                  </button>
-                </form>
+               <a 
+  href="https://forms.gle/iXbqurve6XiyWnJb7"
+  target="_blank"
+  className="mt-4 block text-center rounded-full bg-emerald-800 px-5 py-3 text-sm font-semibold text-white hover:bg-emerald-900"
+>
+  Register interest
+</a>
               </div>
             </aside>
           </div>
