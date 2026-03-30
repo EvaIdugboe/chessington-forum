@@ -246,8 +246,8 @@ export default function HomePage() {
               </div>
             </aside>
           </div>
-        </div>
-      </section>
-    </main>
-  );
-}
+            </div>
+          </section>
+        </main>
+      );
+    }
