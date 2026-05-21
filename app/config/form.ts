@@ -1,6 +1,6 @@
 export const FORM_CONFIG = {
   action:
-    "https://docs.google.com/forms/d/e/1FAIpQLSeLF2yM-PJSJ3kTWfQvdYYvHzhNkgs2NOJg3N0Vj5ef0EZxVw/formResponse",
+    "https://docs.google.com/forms/d/e/1FAIpQLSeLF2yM-PJSJ3kTWFQvdYYvHzhNkgs2NOJg3N0Vj5ef0EZxVw/formResponse",
   fields: {
     fullName: "entry.1806096104",
     businessName: "entry.1713689042",
@@ -22,3 +22,4 @@ export const INTEREST_OPTIONS = [
   "Sustainability / green skills",
   "Networking",
 ] as const;
+

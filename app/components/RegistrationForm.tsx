@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { FORM_CONFIG, INTEREST_OPTIONS } from "../config/form";
 
 type FormStatus = "idle" | "submitting" | "success";
@@ -47,6 +47,10 @@ export default function RegistrationForm() {
   const formRef = useRef<HTMLFormElement>(null);
   // Ref used to avoid stale closure inside iframe onLoad
   const isSubmitting = useRef(false);
+  const fbzx = useMemo(
+    () => `${Date.now()}${Math.floor(Math.random() * 1_000_000)}`,
+    []
+  );
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     const errs = validate(e.currentTarget);
@@ -106,6 +110,11 @@ export default function RegistrationForm() {
         noValidate
         className="mt-4 space-y-4 text-left"
       >
+        <input type="hidden" name="fbzx" value={fbzx} />
+        <input type="hidden" name="pageHistory" value="0" />
+        <input type="hidden" name="draftResponse" value="[]" />
+        <input type="hidden" name="fvv" value="1" />
+        <input type="hidden" name="ifq" value="" />
         <div>
           <label htmlFor="reg-full-name" className="sr-only">
             Full name
