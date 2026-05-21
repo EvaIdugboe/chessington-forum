@@ -231,11 +231,11 @@ export default function HomePage() {
                   <p>
                     <span className="font-bold text-[#d8e66d]">Websites:</span>
                     <br />
-                    <a href="https://roehamptonsustainablefutureshub.co.uk" target="_blank" rel="noopener noreferrer" className="text-[#d8e66d] hover:underline">
+                    <a href="https://roehamptonsustainablefutureshub.co.uk" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
                       roehamptonsustainablefutureshub.co.uk
                     </a>
                     <br />
-                    <a href="https://thecommunitybrain.org" target="_blank" rel="noopener noreferrer" className="text-[#d8e66d] hover:underline">
+                    <a href="https://thecommunitybrain.org" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
                       thecommunitybrain.org
                     </a>
                   </p>
@@ -243,15 +243,15 @@ export default function HomePage() {
                   <p>
                     <span className="font-bold text-[#d8e66d]">Instagram:</span>
                     <br />
-                    <a href="https://www.instagram.com/greenskills_" target="_blank" rel="noopener noreferrer" className="text-[#d8e66d] hover:underline">
+                    <a href="https://www.instagram.com/greenskills_" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
                       @greenskills_
                     </a>
                     ·
-                    <a href="https://www.instagram.com/roehamptonsustainablefutures" target="_blank" rel="noopener noreferrer" className="text-[#d8e66d] hover:underline">
+                    <a href="https://www.instagram.com/roehamptonsustainablefutures" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
                       @roehamptonsustainablefutures 
                     </a>
                     ·
-                    <a href="https://www.instagram.com/communitybrain" target="_blank" rel="noopener noreferrer" className="text-[#d8e66d] hover:underline">
+                    <a href="https://www.instagram.com/communitybrain" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
                       @communitybrain
                     </a>
                   </p>
