@@ -112,26 +112,26 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="rounded-3xl bg-[#003f2f] p-6 text-white shadow-sm">
-                <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a6bd19]">
+              <div className="rounded-3xl bg-[#003f2f] p-4 text-white shadow-sm sm:p-6">
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-[#a6bd19] sm:text-sm">
                   Your voice, your impact
                 </p>
                 <h2 className="mt-3 text-2xl font-black">
                   Chessington Industrial Estate Yellow Pages
                 </h2>
-                <p className="mt-4 text-base leading-8 text-white/90">
+                <p className="mt-4 text-sm leading-7 text-white/90 sm:text-base sm:leading-8">
                   Businesses that register and take part in the forum will have the opportunity to be
                   included in a new Yellow Pages-style business directory connecting businesses,
                   services, suppliers, skills and collaboration opportunities across the estate.
                 </p>
               </div>
 
-              <div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-[#003f2f]/10">
+              <div className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-[#003f2f]/10 sm:p-6">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-[#003f2f]">
                   This is what businesses told us at Forum 1
                 </p>
 
-                <div className="mt-5 grid gap-4 sm:grid-cols-2">
+                <div className="mt-5 grid gap-4 grid-cols-1 sm:grid-cols-2">
                   {[
                     {
                       title: "Collaboration",
@@ -150,7 +150,7 @@ export default function HomePage() {
                       body: "Infrastructure, roads, parking and local communication remain important priorities.",
                     },
                   ].map((item) => (
-                    <div key={item.title} className="rounded-2xl bg-[#f5f0e6] p-5 shadow-sm">
+                    <div key={item.title} className="rounded-2xl bg-[#f5f0e6] p-4 sm:p-5 shadow-sm">
                       <h3 className="font-black text-[#003f2f]">{item.title}</h3>
                       <p className="mt-2 text-sm leading-7 text-[#111111]">{item.body}</p>
                     </div>
@@ -158,7 +158,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-[#003f2f]/10">
+              <div className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-[#003f2f]/10 sm:p-6">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-[#003f2f]">
                   Special host
                 </p>
@@ -167,11 +167,11 @@ export default function HomePage() {
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Official_portrait_of_Ed_Davey_MP%2C_2024_%28cropped%29.jpg"
                     alt="Sir Ed Davey MP"
-                    className="h-[200px] w-full rounded-2xl object-cover sm:h-[240px] sm:rounded-3xl md:h-[280px] md:w-[220px]"
+                    className="h-[180px] w-full rounded-2xl object-cover sm:h-[220px] sm:rounded-3xl md:h-[280px] md:w-[220px]"
                   />
 
                   <div>
-                    <h2 className="text-3xl font-black text-[#003f2f]">Sir Ed Davey MP</h2>
+                    <h2 className="text-2xl font-black text-[#003f2f] sm:text-3xl">Sir Ed Davey MP</h2>
 
                     <p className="mt-2 text-sm font-bold text-[#111111]">
                       Leader of the Liberal Democrats and MP for Kingston and Surbiton
@@ -194,11 +194,11 @@ export default function HomePage() {
             </div>
 
             <aside className="space-y-5 sm:space-y-6">
-              <div className="rounded-3xl border border-[#003f2f]/10 bg-white p-6 shadow-sm">
+              <div className="rounded-3xl border border-[#003f2f]/10 bg-white p-4 shadow-sm sm:p-6">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-[#003f2f]">
                   Forum focus
                 </p>
-                <ul className="mt-4 space-y-3 text-sm font-semibold leading-7 text-[#111111]">
+                <ul className="mt-4 space-y-3 text-sm font-semibold leading-7 text-[#111111] sm:text-base">
                   <li>• Shared business challenges</li>
                   <li>• Collaboration and local networking.</li>
                   <li>• Waste, materials and sustainability.</li>
@@ -209,12 +209,12 @@ export default function HomePage() {
 
               <RegistrationForm />
 
-              <div className="rounded-3xl bg-[#003f2f] p-6 text-white">
+              <div className="rounded-3xl bg-[#003f2f] p-4 text-white shadow-sm sm:p-6">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a6bd19]">
                   Delivered by
                 </p>
 
-                <div className="mt-5 grid gap-3">
+                <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
                   {[
                     "Green Skills & Employability Project",
                     "University of Roehampton",
@@ -222,7 +222,7 @@ export default function HomePage() {
                     "The Community Brain",
                   ].map((name) => (
                     <div key={name} className="rounded-2xl bg-white/10 p-4">
-                      <p className="font-bold">{name}</p>
+                      <p className="font-bold text-sm sm:text-base">{name}</p>
                     </div>
                   ))}
                 </div>
