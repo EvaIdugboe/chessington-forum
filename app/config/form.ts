@@ -1,6 +1,6 @@
 export const FORM_CONFIG = {
   action:
-    "https://docs.google.com/forms/d/e/1gyhkf4TbGx7PStEb6uejnzAeC7tyy3DMQasO00d9flo/formResponse",
+    "https://docs.google.com/forms/d/e/1FAIpQLSeLF2yM-PJSJ3kTWFQvdYYvHzhNkgs2NOJg3N0Vj5ef0EZxVw/formResponse",
   fields: {
     fullName: "entry.1806096104",
     businessName: "entry.1713689042",
@@ -13,7 +13,8 @@ export const FORM_CONFIG = {
 export const EVENT_DETAILS = {
   time: "11:00am – 12pm",
   date: "Thursday 18th June 2026",
-  location: "King George Field Indoor Bowls Club, Jubilee Way, Chessington KT6 7NA",
+  location:
+    "King George Field Indoor Bowls Club, Jubilee Way, Chessington KT6 7NA",
 } as const;
 
 export const INTEREST_OPTIONS = [
@@ -22,4 +23,3 @@ export const INTEREST_OPTIONS = [
   "Sustainability / green skills",
   "Networking",
 ] as const;
-
