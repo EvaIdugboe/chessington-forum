@@ -158,16 +158,37 @@ export default function HomePage() {
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-800">
                   Special host
                 </p>
-                <h2 className="mt-3 text-3xl font-black text-emerald-950">Sir Ed Davey MP</h2>
-                <p className="mt-2 text-sm font-semibold text-slate-700">
-                  Leader of the Liberal Democrats and MP for Kingston and Surbiton
-                </p>
-                <p className="mt-4 text-base leading-8 text-slate-700">
-                  Sir Ed Davey MP will be joining the forum as Special Host to hear directly from local
-                  businesses about the opportunities, challenges and future of Chessington Industrial
-                  Estate. This is an opportunity for businesses to raise the issues that matter locally and
-                  help shape future support, collaboration and policy attention for the estate.
-                </p>
+
+                  <div className="mt-5 flex flex-col gap-6 md:flex-row md:items-start">
+                    
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Official_portrait_of_Ed_Davey_MP%2C_2024_%28cropped%29.jpg"
+                      alt="Sir Ed Davey MP"
+                      className="h-[280px] w-full rounded-3xl object-cover md:w-[220px]"
+                    />
+
+                    <div>
+                      <h2 className="text-3xl font-black text-emerald-950">
+                        Sir Ed Davey MP
+                      </h2>
+
+                      <p className="mt-2 text-sm font-semibold text-slate-700">
+                        Leader of the Liberal Democrats and MP for Kingston and Surbiton
+                      </p>
+
+                      <p className="mt-4 text-base leading-8 text-slate-700">
+                        Sir Ed Davey MP will be joining the forum as Special Host to hear directly
+                        from local businesses about the opportunities, challenges and future of
+                        Chessington Industrial Estate.
+                      </p>
+
+                      <p className="mt-4 text-base leading-8 text-slate-700">
+                        This is an opportunity for businesses to raise the issues that matter locally,
+                        discuss infrastructure, collaboration, sustainability and growth challenges,
+                        and help shape future support and engagement across the estate.
+                      </p>
+                    </div>
+                  </div>
               </div>
             </div>
 
