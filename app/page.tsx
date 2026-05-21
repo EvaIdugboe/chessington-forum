@@ -233,13 +233,25 @@ export default function HomePage() {
                     <br />
                     roehamptonsustainablefutureshub.co.uk
                     <br />
-                    thecommunitybrain.org
+                    <a href="https://thecommunitybrain.org" target="_blank" rel="noopener noreferrer" className="text-[#d8e66d] hover:underline">
+                      thecommunitybrain.org
+                    </a>
                   </p>
 
                   <p>
                     <span className="font-bold text-[#d8e66d]">Instagram:</span>
                     <br />
-                    @greenskills_ · @roehamptonsustainablefutures · @communitybrain
+                    <a href="https://www.instagram.com/greenskills_" target="_blank" rel="noopener noreferrer" className="text-[#d8e66d] hover:underline">
+                      @greenskills_
+                    </a>
+                    ·
+                    <a href="https://www.instagram.com/roehamptonsustainablefutures" target="_blank" rel="noopener noreferrer" className="text-[#d8e66d] hover:underline">
+                      @roehamptonsustainablefutures
+                    </a>
+                    ·
+                    <a href="https://www.instagram.com/communitybrain" target="_blank" rel="noopener noreferrer" className="text-[#d8e66d] hover:underline">
+                      @communitybrain
+                    </a>
                   </p>
                 </div>
               </div>
