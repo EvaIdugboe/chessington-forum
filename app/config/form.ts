@@ -11,8 +11,8 @@ export const FORM_CONFIG = {
 } as const;
 
 export const EVENT_DETAILS = {
-  time: "5pm – 6pm",
-  date: "Wednesday 6th May 2026",
+  time: "11:00am – 12pm",
+  date: "Thursday 18th June 2026",
   location: "King George Field Indoor Bowls Club, Jubilee Way, Chessington KT6 7NA",
 } as const;
 
