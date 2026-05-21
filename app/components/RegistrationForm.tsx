@@ -13,7 +13,7 @@ type FormErrors = {
 };
 
 const inputClass =
-  "w-full rounded-2xl border px-4 py-3 outline-none focus:border-emerald-700 transition";
+  "w-full rounded-2xl border px-3 py-2 text-sm sm:px-4 sm:py-3 outline-none focus:border-emerald-700 transition";
 
 function validate(form: HTMLFormElement): FormErrors {
   const data = new FormData(form);
@@ -70,20 +70,20 @@ export default function RegistrationForm() {
 
   if (status === "success") {
     return (
-      <div className="rounded-3xl border border-dashed border-emerald-300 bg-white p-6 text-center shadow-sm">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-800">
+      <div className="rounded-3xl border border-dashed border-emerald-300 bg-white p-5 text-center shadow-sm sm:p-6">
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-800 sm:text-sm">
           Register interest
         </p>
-        <div className="mt-6 space-y-2">
-          <p className="text-3xl text-emerald-700">✓</p>
+        <div className="mt-4 space-y-2 sm:mt-6">
+          <p className="text-2xl text-emerald-700 sm:text-3xl">✓</p>
           <p className="font-semibold text-emerald-800">You&apos;re registered!</p>
-          <p className="text-sm leading-6 text-slate-600">
+          <p className="text-xs leading-6 text-slate-600 sm:text-sm">
             Thank you. We&apos;ll be in touch with details closer to the event.
           </p>
         </div>
         <button
           onClick={() => setStatus("idle")}
-          className="mt-4 text-sm text-emerald-700 underline"
+          className="mt-3 text-xs text-emerald-700 underline sm:mt-4 sm:text-sm"
         >
           Submit another response
         </button>
@@ -92,8 +92,8 @@ export default function RegistrationForm() {
   }
 
   return (
-    <div className="rounded-3xl border border-dashed border-emerald-300 bg-white p-6 text-center shadow-sm">
-      <p className="text-sm font-semibold uppercase tracking-[0.18em] text-emerald-800">
+    <div className="rounded-3xl border border-dashed border-emerald-300 bg-white p-5 text-center shadow-sm sm:p-6">
+      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-800 sm:text-sm">
         Register interest
       </p>
 
@@ -104,7 +104,7 @@ export default function RegistrationForm() {
         target="hidden_iframe"
         onSubmit={handleSubmit}
         noValidate
-        className="mt-4 space-y-4 text-left"
+        className="mt-3 space-y-3 text-left sm:mt-4 sm:space-y-4"
       >
         <div>
           <label htmlFor="reg-full-name" className="sr-only">
@@ -163,8 +163,8 @@ export default function RegistrationForm() {
           )}
         </div>
 
-        <fieldset className="rounded-2xl border border-stone-300 p-4">
-          <legend className="mb-3 text-sm font-semibold text-emerald-800">
+        <fieldset className="rounded-2xl border border-stone-300 p-3 sm:p-4">
+          <legend className="mb-2 text-xs font-semibold text-emerald-800 sm:mb-3 sm:text-sm">
             Are you based in the Chessington Industrial Estate?
           </legend>
 
@@ -193,8 +193,8 @@ export default function RegistrationForm() {
           )}
         </fieldset>
 
-        <fieldset className="rounded-2xl border border-stone-300 p-4">
-          <legend className="mb-3 text-sm font-semibold text-emerald-800">
+        <fieldset className="rounded-2xl border border-stone-300 p-3 sm:p-4">
+          <legend className="mb-2 text-xs font-semibold text-emerald-800 sm:mb-3 sm:text-sm">
             What are your main interests?(Select all that apply)
           </legend>
 

@@ -5,25 +5,25 @@ import RegistrationForm from "./components/RegistrationForm";
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#f5f0e6] text-[#062d21]">
-      <section className="mx-auto max-w-6xl px-5 py-8 md:px-10 md:py-12">
+      <section className="mx-auto max-w-6xl px-4 py-6 sm:px-5 md:px-10 md:py-12">
         <div className="overflow-hidden rounded-[2rem] border border-[#003f2f]/20 bg-[#fffaf0] shadow-sm">
-          <div className="grid gap-8 bg-[#fffaf0] px-6 py-8 md:grid-cols-[1.1fr_0.9fr] md:px-10 md:py-12">
+          <div className="grid gap-6 bg-[#fffaf0] px-5 py-6 sm:gap-8 sm:px-6 sm:py-8 md:grid-cols-[1.1fr_0.9fr] md:px-10 md:py-12">
             <div>
               <p className="inline-block rounded-sm bg-[#003f2f] px-4 py-2 text-sm font-black uppercase tracking-[0.18em] text-white">
                 Chessington Industrial Estate
               </p>
 
-              <h1 className="mt-6 text-5xl font-black uppercase leading-none tracking-tight text-[#003f2f] md:text-7xl">
+              <h1 className="mt-4 text-4xl font-black uppercase leading-none tracking-tight text-[#003f2f] sm:mt-6 sm:text-5xl md:text-7xl">
                 Business <br />
                 Community <br />
                 Forum
               </h1>
 
-              <p className="mt-5 text-lg font-black text-[#003f2f]">
+              <p className="mt-3 text-base font-black text-[#003f2f] sm:mt-5 sm:text-lg">
                 Building Connections • Sharing Challenges • Creating Opportunities
               </p>
 
-              <p className="mt-6 max-w-2xl text-lg font-semibold leading-8 text-[#111111]">
+              <p className="mt-4 max-w-2xl text-base font-semibold leading-7 text-[#111111] sm:mt-6 sm:text-lg sm:leading-8">
                 Join local businesses, community partners and organisations for a focused forum to
                 discuss shared challenges, explore collaboration and help shape the future of
                 Chessington Industrial Estate.
@@ -42,7 +42,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <aside className="space-y-5">
+            <aside className="space-y-4 sm:space-y-5">
               <div className="rounded-3xl border-2 border-[#a6bd19] bg-[#d8e66d] p-6">
                 <p className="text-3xl font-black italic text-[#003f2f]">You’re invited!</p>
                 <p className="mt-3 text-sm font-semibold leading-7 text-[#003f2f]">
@@ -86,7 +86,7 @@ export default function HomePage() {
             </aside>
           </div>
 
-          <div className="grid gap-8 px-6 py-8 md:grid-cols-[1.2fr_0.8fr] md:px-10 md:py-10">
+          <div className="grid gap-6 px-5 py-6 sm:gap-8 sm:px-6 sm:py-8 md:grid-cols-[1.2fr_0.8fr] md:px-10 md:py-10">
             <div className="space-y-8">
               <div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-[#003f2f]/10">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-[#003f2f]">
@@ -163,11 +163,11 @@ export default function HomePage() {
                   Special host
                 </p>
 
-                <div className="mt-5 flex flex-col gap-6 md:flex-row md:items-start">
+                <div className="mt-5 flex flex-col gap-4 sm:gap-6 md:flex-row md:items-start">
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Official_portrait_of_Ed_Davey_MP%2C_2024_%28cropped%29.jpg"
                     alt="Sir Ed Davey MP"
-                    className="h-[280px] w-full rounded-3xl object-cover md:w-[220px]"
+                    className="h-[200px] w-full rounded-2xl object-cover sm:h-[240px] sm:rounded-3xl md:h-[280px] md:w-[220px]"
                   />
 
                   <div>
@@ -193,7 +193,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <aside className="space-y-6">
+            <aside className="space-y-5 sm:space-y-6">
               <div className="rounded-3xl border border-[#003f2f]/10 bg-white p-6 shadow-sm">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-[#003f2f]">
                   Forum focus
@@ -227,11 +227,13 @@ export default function HomePage() {
                   ))}
                 </div>
 
-                <div className="mt-6 space-y-3 border-t border-white/20 pt-5 text-sm leading-7 text-white/90">
+                <div className="mt-6 text-white space-y-3 border-t border-white/20 pt-5 text-sm leading-7 text-white/90">
                   <p>
                     <span className="font-bold text-[#d8e66d]">Websites:</span>
                     <br />
-                    roehamptonsustainablefutureshub.co.uk
+                    <a href="https://roehamptonsustainablefutureshub.co.uk" target="_blank" rel="noopener noreferrer" className="text-[#d8e66d] hover:underline">
+                      roehamptonsustainablefutureshub.co.uk
+                    </a>
                     <br />
                     <a href="https://thecommunitybrain.org" target="_blank" rel="noopener noreferrer" className="text-[#d8e66d] hover:underline">
                       thecommunitybrain.org
