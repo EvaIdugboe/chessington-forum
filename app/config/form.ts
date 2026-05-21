@@ -1,6 +1,6 @@
 export const FORM_CONFIG = {
   action:
-    "https://docs.google.com/forms/d/e/1FAIpQLSeLF2yM-PJSJ3kTWFQvdYYvHzhNkgs2NOJg3N0Vj5ef0EZxVw/formResponse",
+    "https://docs.google.com/forms/d/e/1gyhkf4TbGx7PStEb6uejnzAeC7tyy3DMQasO00d9flo/formResponse",
   fields: {
     fullName: "entry.1806096104",
     businessName: "entry.1713689042",
