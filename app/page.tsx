@@ -128,7 +128,7 @@ export default function HomePage() {
 
               <div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-[#003f2f]/10">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-[#003f2f]">
-                  What businesses told us at Forum 1
+                  This is what businesses told us at Forum 1
                 </p>
 
                 <div className="mt-5 grid gap-4 sm:grid-cols-2">
@@ -138,15 +138,15 @@ export default function HomePage() {
                       body: "Businesses want stronger connections across the estate.",
                     },
                     {
-                      title: "Waste & materials",
+                      title: "Waste & Materials",
                       body: "There is interest in local reuse, shared recycling and material exchange.",
                     },
                     {
-                      title: "Skills & staffing",
+                      title: "Skills & Staffing",
                       body: "Businesses highlighted the need for practical skills, training and recruitment support.",
                     },
                     {
-                      title: "Estate improvements",
+                      title: "Estate Improvements",
                       body: "Infrastructure, roads, parking and local communication remain important priorities.",
                     },
                   ].map((item) => (
@@ -200,10 +200,10 @@ export default function HomePage() {
                 </p>
                 <ul className="mt-4 space-y-3 text-sm font-semibold leading-7 text-[#111111]">
                   <li>• Shared business challenges</li>
-                  <li>• Collaboration and local networking</li>
-                  <li>• Waste, materials and sustainability</li>
-                  <li>• Skills, staffing and training</li>
-                  <li>• Estate improvements and future activity</li>
+                  <li>• Collaboration and local networking.</li>
+                  <li>• Waste, materials and sustainability.</li>
+                  <li>• Skills, staffing and training.</li>
+                  <li>• Estate improvements and future activity.</li>
                 </ul>
               </div>
 
@@ -246,7 +246,7 @@ export default function HomePage() {
                     </a>
                     ·
                     <a href="https://www.instagram.com/roehamptonsustainablefutures" target="_blank" rel="noopener noreferrer" className="text-[#d8e66d] hover:underline">
-                      @roehamptonsustainablefutures
+                      @roehamptonsustainablefutures 
                     </a>
                     ·
                     <a href="https://www.instagram.com/communitybrain" target="_blank" rel="noopener noreferrer" className="text-[#d8e66d] hover:underline">

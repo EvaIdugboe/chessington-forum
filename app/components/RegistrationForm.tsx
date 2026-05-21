@@ -195,7 +195,7 @@ export default function RegistrationForm() {
 
         <fieldset className="rounded-2xl border border-stone-300 p-4">
           <legend className="mb-3 text-sm font-semibold text-emerald-800">
-            What are your main interests?
+            What are your main interests?(Select all that apply)
           </legend>
 
           {INTEREST_OPTIONS.map((interest) => (
