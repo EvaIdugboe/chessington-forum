@@ -7,7 +7,7 @@ export default function HomePage() {
     <main className="min-h-screen bg-[#f5f0e6] text-[#062d21]">
       <section className="mx-auto max-w-6xl px-4 py-6 sm:px-5 md:px-10 md:py-12">
         <div className="overflow-hidden rounded-[2rem] border border-[#003f2f]/20 bg-[#fffaf0] shadow-sm">
-          <div className="grid gap-6 bg-[#fffaf0] px-5 py-6 sm:gap-8 sm:px-6 sm:py-8 md:grid-cols-[1.1fr_0.9fr] md:px-10 md:py-12">
+          <div className="grid gap-6 bg-[#fffaf0] px-5 py-6 sm:gap-8 sm:px-6 sm:py-8 md:grid-cols-[1.1fr_0.9fr] md:px-10 md:pt-12 md:pb-4">
             <div>
               <p className="inline-block rounded-sm bg-[#003f2f] px-2 py-1 text-[10px] font-black uppercase tracking-[0.08em] text-white sm:px-4 sm:py-2 sm:text-sm sm:tracking-[0.18em]">
                 Chessington Industrial Estate
@@ -49,14 +49,15 @@ export default function HomePage() {
                     </p>
 
                     <p className="mt-4 text-base leading-8 text-[#111111]">
-                      As Special Host, Sir Ed Davey MP is bringing businesses and decision-makers
-                      together to shape the future of Chessington Industrial Estate.
+                      As Special Host, Sir Ed Davey MP will hear directly from local businesses,
+                      community organisations and stakeholders about the challenges, opportunities
+                      and future priorities for Chessington Industrial Estate.
                     </p>
 
                     <p className="mt-4 text-base leading-8 text-[#111111]">
-                      This is your opportunity to raise the issues that matter — from infrastructure
-                      and collaboration to sustainability and growth — and help shape future support
-                      and engagement across the estate.
+                      This is your opportunity to raise important local issues that matter from
+                      infrastructure and collaboration to sustainability and growth, share experiences
+                      and help shape future support and engagement across the estate.
                     </p>
                   </div>
                 </div>
@@ -119,7 +120,7 @@ export default function HomePage() {
             </aside>
           </div>
 
-          <div className="grid gap-6 px-5 py-6 sm:gap-8 sm:px-6 sm:py-8 md:grid-cols-[1.2fr_0.8fr] md:px-10 md:py-10">
+          <div className="grid gap-6 px-5 py-6 sm:gap-8 sm:px-6 sm:py-8 md:grid-cols-[1.2fr_0.8fr] md:px-10 md:pt-0 md:pb-10">
             <div className="space-y-8">
               <div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-[#003f2f]/10">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-[#003f2f]">
