@@ -29,6 +29,39 @@ export default function HomePage() {
                 Chessington Industrial Estate.
               </p>
 
+              <div className="mt-6 rounded-3xl bg-white p-4 shadow-sm ring-1 ring-[#003f2f]/10 sm:p-6">
+                <p className="text-sm font-black uppercase tracking-[0.18em] text-[#003f2f]">
+                  Special host
+                </p>
+
+                <div className="mt-5 flex flex-col gap-4 sm:gap-6 md:flex-row md:items-start">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Official_portrait_of_Ed_Davey_MP%2C_2024_%28cropped%29.jpg"
+                    alt="Sir Ed Davey MP"
+                    className="w-full rounded-2xl sm:h-[220px] sm:object-cover sm:rounded-3xl md:h-[280px] md:w-[220px]"
+                  />
+
+                  <div>
+                    <h2 className="text-2xl font-black text-[#003f2f] sm:text-3xl">Sir Ed Davey MP</h2>
+
+                    <p className="mt-2 text-sm font-bold text-[#111111]">
+                      Leader of the Liberal Democrats and MP for Kingston and Surbiton
+                    </p>
+
+                    <p className="mt-4 text-base leading-8 text-[#111111]">
+                      As Special Host, Sir Ed Davey MP is bringing businesses and decision-makers
+                      together to shape the future of Chessington Industrial Estate.
+                    </p>
+
+                    <p className="mt-4 text-base leading-8 text-[#111111]">
+                      This is your opportunity to raise the issues that matter — from infrastructure
+                      and collaboration to sustainability and growth — and help shape future support
+                      and engagement across the estate.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               <div className="mt-6 rounded-2xl bg-[#003f2f] p-5 text-white">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a6bd19]">
                   Building on the successful re-launch
@@ -158,39 +191,6 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-[#003f2f]/10 sm:p-6">
-                <p className="text-sm font-black uppercase tracking-[0.18em] text-[#003f2f]">
-                  Special host
-                </p>
-
-                <div className="mt-5 flex flex-col gap-4 sm:gap-6 md:flex-row md:items-start">
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Official_portrait_of_Ed_Davey_MP%2C_2024_%28cropped%29.jpg"
-                    alt="Sir Ed Davey MP"
-                    className="w-full rounded-2xl sm:h-[220px] sm:object-cover sm:rounded-3xl md:h-[280px] md:w-[220px]"
-                  />
-
-                  <div>
-                    <h2 className="text-2xl font-black text-[#003f2f] sm:text-3xl">Sir Ed Davey MP</h2>
-
-                    <p className="mt-2 text-sm font-bold text-[#111111]">
-                      Leader of the Liberal Democrats and MP for Kingston and Surbiton
-                    </p>
-
-                    <p className="mt-4 text-base leading-8 text-[#111111]">
-                      Sir Ed Davey MP will be joining the forum as Special Host to hear directly from
-                      local businesses about the opportunities, challenges and future of Chessington
-                      Industrial Estate.
-                    </p>
-
-                    <p className="mt-4 text-base leading-8 text-[#111111]">
-                      This is an opportunity for businesses to raise the issues that matter locally,
-                      discuss infrastructure, collaboration, sustainability and growth challenges, and
-                      help shape future support and engagement across the estate.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
 
             <aside className="space-y-5 sm:space-y-6 order-first md:order-none">
