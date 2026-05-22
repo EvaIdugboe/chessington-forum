@@ -167,7 +167,7 @@ export default function HomePage() {
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Official_portrait_of_Ed_Davey_MP%2C_2024_%28cropped%29.jpg"
                     alt="Sir Ed Davey MP"
-                    className="h-[180px] w-full rounded-2xl object-cover sm:h-[220px] sm:rounded-3xl md:h-[280px] md:w-[220px]"
+                    className="w-full rounded-2xl sm:h-[220px] sm:object-cover sm:rounded-3xl md:h-[280px] md:w-[220px]"
                   />
 
                   <div>
