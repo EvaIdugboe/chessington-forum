@@ -9,7 +9,7 @@ export default function HomePage() {
         <div className="overflow-hidden rounded-[2rem] border border-[#003f2f]/20 bg-[#fffaf0] shadow-sm">
           <div className="grid gap-6 bg-[#fffaf0] px-5 py-6 sm:gap-8 sm:px-6 sm:py-8 md:grid-cols-[1.1fr_0.9fr] md:px-10 md:py-12">
             <div>
-              <p className="inline-block rounded-sm bg-[#003f2f] px-4 py-2 text-sm font-black uppercase tracking-[0.18em] text-white">
+              <p className="inline-block rounded-sm bg-[#003f2f] px-2 py-1 text-[10px] font-black uppercase tracking-[0.08em] text-white sm:px-4 sm:py-2 sm:text-sm sm:tracking-[0.18em]">
                 Chessington Industrial Estate
               </p>
 
@@ -193,7 +193,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <aside className="space-y-5 sm:space-y-6">
+            <aside className="space-y-5 sm:space-y-6 order-first md:order-none">
               <div className="rounded-3xl border border-[#003f2f]/10 bg-white p-4 shadow-sm sm:p-6">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-[#003f2f]">
                   Forum focus
@@ -227,7 +227,7 @@ export default function HomePage() {
                   ))}
                 </div>
 
-                <div className="mt-6 text-white space-y-3 border-t border-white/20 pt-5 text-sm leading-7 text-white/90">
+                <div className="mt-6 space-y-3 break-words border-t border-white/20 pt-5 text-sm leading-7 text-white/90">
                   <p>
                     <span className="font-bold text-[#d8e66d]">Websites:</span>
                     <br />
@@ -246,11 +246,11 @@ export default function HomePage() {
                     <a href="https://www.instagram.com/greenskills_" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
                       @greenskills_
                     </a>
-                    ·
+                    <br />
                     <a href="https://www.instagram.com/roehamptonsustainablefutures" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
-                      @roehamptonsustainablefutures 
+                      @roehamptonsustainablefutures
                     </a>
-                    ·
+                    <br />
                     <a href="https://www.instagram.com/communitybrain" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
                       @communitybrain
                     </a>
