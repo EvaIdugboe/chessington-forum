@@ -7,8 +7,10 @@ export default function HomePage() {
     <main className="min-h-screen bg-[#f5f0e6] text-[#062d21]">
       <section className="mx-auto max-w-6xl px-4 py-6 sm:px-5 md:px-10 md:py-12">
         <div className="overflow-hidden rounded-[2rem] border border-[#003f2f]/20 bg-[#fffaf0] shadow-sm">
-          <div className="grid gap-6 bg-[#fffaf0] px-5 py-6 sm:gap-8 sm:px-6 sm:py-8 md:grid-cols-[1.1fr_0.9fr] md:px-10 md:pt-12 md:pb-4">
-            <div>
+          <div className="flex flex-col gap-6 px-5 py-6 sm:gap-8 sm:px-6 sm:py-8 md:grid md:grid-cols-[1.1fr_0.9fr] md:items-start md:px-10 md:py-12">
+
+            {/* ── LEFT TOP: Hero + Sir Ed + Re-launch ── */}
+            <div className="md:col-start-1 md:row-start-1">
               <p className="inline-block rounded-sm bg-[#003f2f] px-2 py-1 text-[10px] font-black uppercase tracking-[0.08em] text-white sm:px-4 sm:py-2 sm:text-sm sm:tracking-[0.18em]">
                 Chessington Industrial Estate
               </p>
@@ -76,9 +78,10 @@ export default function HomePage() {
               </div>
             </div>
 
-            <aside className="space-y-4 sm:space-y-5">
+            {/* ── RIGHT SIDEBAR: spans both rows on desktop ── */}
+            <aside className="space-y-4 sm:space-y-5 md:col-start-2 md:row-start-1 md:row-span-2">
               <div className="rounded-3xl border-2 border-[#a6bd19] bg-[#d8e66d] p-6">
-                <p className="text-3xl font-black italic text-[#003f2f]">You’re invited!</p>
+                <p className="text-3xl font-black italic text-[#003f2f]">You're invited!</p>
                 <p className="mt-3 text-sm font-semibold leading-7 text-[#003f2f]">
                   Your voice helps shape local policy, future support and practical action for
                   businesses across Chessington Industrial Estate.
@@ -105,7 +108,7 @@ export default function HomePage() {
                   <div>
                     <p className="text-xs uppercase tracking-[0.2em] text-[#d8e66d]">Venue</p>
                     <p className="mt-1 text-xl font-black leading-snug">
-                      King George’s Hall & Indoor Bowls Club
+                      King George's Hall & Indoor Bowls Club
                     </p>
                     <p className="mt-1 text-sm leading-6 text-white/80">
                       Jubilee Way, Chessington KT6 7NA
@@ -117,11 +120,74 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-            </aside>
-          </div>
 
-          <div className="grid gap-6 px-5 py-6 sm:gap-8 sm:px-6 sm:py-8 md:grid-cols-[1.2fr_0.8fr] md:px-10 md:pt-0 md:pb-10">
-            <div className="space-y-8">
+              <div className="rounded-3xl border border-[#003f2f]/10 bg-white p-4 shadow-sm sm:p-6">
+                <p className="text-sm font-black uppercase tracking-[0.18em] text-[#003f2f]">
+                  Forum focus
+                </p>
+                <ul className="mt-4 space-y-3 text-sm font-semibold leading-7 text-[#111111] sm:text-base">
+                  <li>• Shared business challenges</li>
+                  <li>• Collaboration and local networking.</li>
+                  <li>• Waste, materials and sustainability.</li>
+                  <li>• Skills, staffing and training.</li>
+                  <li>• Estate improvements and future activity.</li>
+                </ul>
+              </div>
+
+              <RegistrationForm />
+
+              <div className="rounded-3xl bg-[#003f2f] p-4 text-white shadow-sm sm:p-6">
+                <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a6bd19]">
+                  Delivered by
+                </p>
+
+                <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  {[
+                    "Green Skills & Employability Project",
+                    "University of Roehampton",
+                    "Roehampton Sustainable Futures Hub",
+                    "The Community Brain",
+                  ].map((name) => (
+                    <div key={name} className="rounded-2xl bg-white/10 p-4">
+                      <p className="font-bold text-sm sm:text-base">{name}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-6 space-y-3 break-words border-t border-white/20 pt-5 text-sm leading-7 text-white/90">
+                  <p>
+                    <span className="font-bold text-[#d8e66d]">Websites:</span>
+                    <br />
+                    <a href="https://roehamptonsustainablefutureshub.co.uk" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+                      roehamptonsustainablefutureshub.co.uk
+                    </a>
+                    <br />
+                    <a href="https://thecommunitybrain.org" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+                      thecommunitybrain.org
+                    </a>
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-[#d8e66d]">Instagram:</span>
+                    <br />
+                    <a href="https://www.instagram.com/greenskills_" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+                      @greenskills_
+                    </a>
+                    <br />
+                    <a href="https://www.instagram.com/roehamptonsustainablefutures" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+                      @roehamptonsustainablefutures
+                    </a>
+                    <br />
+                    <a href="https://www.instagram.com/communitybrain" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
+                      @communitybrain
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </aside>
+
+            {/* ── LEFT BOTTOM: Why attend + Yellow Pages + Forum 1 ── */}
+            <div className="space-y-8 md:col-start-1 md:row-start-2">
               <div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-[#003f2f]/10">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-[#003f2f]">
                   Why attend?
@@ -191,74 +257,8 @@ export default function HomePage() {
                   ))}
                 </div>
               </div>
-
             </div>
 
-            <aside className="space-y-5 sm:space-y-6 order-first md:order-none">
-              <div className="rounded-3xl border border-[#003f2f]/10 bg-white p-4 shadow-sm sm:p-6">
-                <p className="text-sm font-black uppercase tracking-[0.18em] text-[#003f2f]">
-                  Forum focus
-                </p>
-                <ul className="mt-4 space-y-3 text-sm font-semibold leading-7 text-[#111111] sm:text-base">
-                  <li>• Shared business challenges</li>
-                  <li>• Collaboration and local networking.</li>
-                  <li>• Waste, materials and sustainability.</li>
-                  <li>• Skills, staffing and training.</li>
-                  <li>• Estate improvements and future activity.</li>
-                </ul>
-              </div>
-
-              <RegistrationForm />
-
-              <div className="rounded-3xl bg-[#003f2f] p-4 text-white shadow-sm sm:p-6">
-                <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a6bd19]">
-                  Delivered by
-                </p>
-
-                <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
-                  {[
-                    "Green Skills & Employability Project",
-                    "University of Roehampton",
-                    "Roehampton Sustainable Futures Hub",
-                    "The Community Brain",
-                  ].map((name) => (
-                    <div key={name} className="rounded-2xl bg-white/10 p-4">
-                      <p className="font-bold text-sm sm:text-base">{name}</p>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-6 space-y-3 break-words border-t border-white/20 pt-5 text-sm leading-7 text-white/90">
-                  <p>
-                    <span className="font-bold text-[#d8e66d]">Websites:</span>
-                    <br />
-                    <a href="https://roehamptonsustainablefutureshub.co.uk" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
-                      roehamptonsustainablefutureshub.co.uk
-                    </a>
-                    <br />
-                    <a href="https://thecommunitybrain.org" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
-                      thecommunitybrain.org
-                    </a>
-                  </p>
-
-                  <p>
-                    <span className="font-bold text-[#d8e66d]">Instagram:</span>
-                    <br />
-                    <a href="https://www.instagram.com/greenskills_" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
-                      @greenskills_
-                    </a>
-                    <br />
-                    <a href="https://www.instagram.com/roehamptonsustainablefutures" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
-                      @roehamptonsustainablefutures
-                    </a>
-                    <br />
-                    <a href="https://www.instagram.com/communitybrain" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">
-                      @communitybrain
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </aside>
           </div>
         </div>
       </section>
