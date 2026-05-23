@@ -65,7 +65,7 @@ export default function HomePage() {
                 </div>
               </div>
 
-              <div className="mt-6 rounded-2xl bg-[#003f2f] p-5 text-white">
+              <div className="hidden md:block mt-6 rounded-2xl bg-[#003f2f] p-5 text-white">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a6bd19]">
                   Building on the successful re-launch
                 </p>
@@ -81,6 +81,19 @@ export default function HomePage() {
             {/* Registration form — mobile only, sits right after Sir Ed */}
             <div className="md:hidden">
               <RegistrationForm />
+            </div>
+
+            {/* Building on the successful re-launch — mobile only, after registration form */}
+            <div className="md:hidden rounded-2xl bg-[#003f2f] p-5 text-white">
+              <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a6bd19]">
+                Building on the successful re-launch
+              </p>
+              <p className="mt-3 text-base leading-7">
+                This is the second in a new series of community forums, continuing the regular
+                forums that brought the community together before COVID. The first forum on 6 May
+                2026 highlighted collaboration, waste and materials, skills, infrastructure and future
+                networking as key priorities.
+              </p>
             </div>
 
             {/* ── RIGHT SIDEBAR: spans both rows on desktop ── */}
