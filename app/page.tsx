@@ -78,6 +78,11 @@ export default function HomePage() {
               </div>
             </div>
 
+            {/* Registration form — mobile only, sits right after Sir Ed */}
+            <div className="md:hidden">
+              <RegistrationForm />
+            </div>
+
             {/* ── RIGHT SIDEBAR: spans both rows on desktop ── */}
             <aside className="space-y-4 sm:space-y-5 md:col-start-2 md:row-start-1 md:row-span-2">
               <div className="rounded-3xl border-2 border-[#a6bd19] bg-[#d8e66d] p-6">
@@ -134,7 +139,9 @@ export default function HomePage() {
                 </ul>
               </div>
 
-              <RegistrationForm />
+              <div className="hidden md:block">
+                <RegistrationForm />
+              </div>
 
               <div className="rounded-3xl bg-[#003f2f] p-4 text-white shadow-sm sm:p-6">
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-[#a6bd19]">
