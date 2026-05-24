@@ -204,6 +204,21 @@ export default function HomePage() {
                   </p>
                 </div>
               </div>
+
+              <div className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-[#003f2f]/10 sm:p-6">
+                <p className="text-sm leading-7 text-[#111111]">
+                  This forum is a project under the Green Skills for South London initiatives
+                  partnership between the University of Roehampton through Roehampton Sustainable
+                  Futures Hub and The Community Brain, bringing together local businesses, community
+                  organisations and stakeholders to support collaboration, shared learning and long
+                  term engagement across Chessington Industrial Estate.
+                </p>
+                <p className="mt-4 text-sm leading-7 text-[#111111]">
+                  The partnership combines academic research, community engagement and practical
+                  business insight to help identify local challenges, create opportunities for
+                  collaboration and support future sustainable development across the estate.
+                </p>
+              </div>
             </aside>
 
             {/* ── LEFT BOTTOM: Why attend + Yellow Pages + Forum 1 ── */}
