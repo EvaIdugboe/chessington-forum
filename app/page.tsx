@@ -206,8 +206,11 @@ export default function HomePage() {
               </div>
 
               <div className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-[#003f2f]/10 sm:p-6">
-                <p className="text-sm leading-7 text-[#111111]">
-                  This forum is a project under the Green Skills for South London initiatives
+                <p className="text-sm font-black uppercase tracking-[0.18em] text-[#003f2f]">
+                  About the Forum and Partners
+                </p>
+                <p className="mt-4 text-sm leading-7 text-[#111111]">
+                  This forum is a project under the Green Skills for South London initiatives a
                   partnership between the University of Roehampton through Roehampton Sustainable
                   Futures Hub and The Community Brain, bringing together local businesses, community
                   organisations and stakeholders to support collaboration, shared learning and long
